@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
         <header class="main-header">
             <!--Logo Holder-->
             <a href="a">
-                <img src="img/church_IMG.jpg" alt="church_IMG" width="300px" height="300px">
+                <img src="img/church_IMG.jpg" alt="church_IMG" width="200px" height="200px">
             </a>
             <div class="search-holder">
                 <form action="" method="get">
@@ -30,12 +31,13 @@
         <nav class="main-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
+                <li><a href="#">Services</a>
                     <ul class="drop">
                         <li><a href="#">Service One</a></li>
                         <li><a href="#">Service Two</a></li>
                         <li><a href="#">Service Three</a></li>
                     </ul>
+                </li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Contact</a></li>
@@ -45,7 +47,7 @@
         
         <!--Banner Slider-->
         <section class="banner-slider">
-            <ul>
+            <ul id="adaptive">
                 <li><img src="https://placehold.co/1000x350" alt=""></li>
                 <li><img src="https://placehold.co/1000x350" alt=""></li>
                 <li><img src="https://placehold.co/1000x350" alt=""></li>
@@ -127,5 +129,17 @@
     <!--Logo Holder-->
     <!--Search Holder-->
     
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#adaptive').lightSlider({
+            adaptiveHeight:true,
+            item:1,
+            slideMargin:0,
+            loop:true
+    });
+});
+    </script>
 </body>
 </html>
