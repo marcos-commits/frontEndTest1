@@ -74,16 +74,18 @@ body {
     padding: 15px;
     background-color: teal;
     display: inline-block;
-    width: 100px;
+    width: 100%;
+}
+
+.main-menu > ul > li:hover .drop {
+    display: block;
+    z-index: 5;
 }
 
 .drop > li > a:hover {
     background-color: orange;
 }
 
-.main-menu > ul > li:hover .drop {
-    display: block;
-}
 
 .lSPager {
     margin-top: -25px !important;

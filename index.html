@@ -10,21 +10,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css" />
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <div class="container">
 
         <!-- Main Header-->
         <header class="main-header">
+
             <!--Logo Holder-->
-            <a href="a">
-                <img src="img/church_IMG.jpg" alt="church_IMG" width="200px" height="200px">
-            </a>
+            <div class="logo-holder">
+                <a href="#">
+                    <img src="img/church_IMG.jpg" alt="church_IMG" width="200px" height="200px">
+                </a>
+            </div>
+            <!--Logo Holder-->
+
+            <!--Search Holder-->
             <div class="search-holder">
                 <form action="" method="get">
                     <input type="search" name="s" placeholder="Search for..">
                     <button type="submit">Search</button>
                 </form>
             </div>
+            <!--Search Holder-->
+
         </header>
 
         <!--Main Menu-->
@@ -64,6 +73,7 @@
                 <p>Sequi aperiam tenetur, laudantium in esse assumenda pariatur amet saepe, totam excepturi quas laboriosam iste exercitationem veniam minus, vitae quo ab autem illo cupiditate. Perferendis porro distinctio soluta omnis recusandae!</p>
                 <p>Sapiente exercitationem fugit est! Ea a iusto animi incidunt quibusdam dolorum laboriosam, similique quidem nihil veritatis, cum nostrum dignissimos suscipit repellat autem veniam saepe, repudiandae expedita perspiciatis quae eum praesentium.</p>
             </main>
+
             <aside class="sidebar">
                 <div class="widget">
                     <h3>Follow us</h3>
@@ -75,56 +85,59 @@
                     </ul>
                 </div>
             </aside>
-            <!-- Content Holder-->
-            <!--Footer Widgets-->
-            <section class="footer-widget-holder">
-                <div class="footer-widget">
-                    <a href="#">
-                        <img src="img/church_IMG.jpg" alt="Cool Company" width="200px" height="auto">
-                    </a>
-                    <h3>Address</h3>
-                    <address>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem nobis temporibus, alias id incidunt, repellendus fuga quidem officia aspernatur at quis deserunt maxime eius unde quisquam asperiores perferendis cum!
-                    </address>
-                </div>
-                <div class="footer-widget">
-                    <h4>Sitemap</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-widget">
-                    <h4>Sitemap</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-widget">
-                    <h4>Sitemap</h4>
-                    <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </section>
-            <!--Footer Widgets-->
-            <!-- Site Footer-->
-            <footer class="site-footer">
-                <p><small>Copyright &copy; 2025</small></p>
-            </footer>
-            <!-- Site Footer-->
         </section>
+        <!-- Content Holder-->
+
+        <!--Footer Widgets-->
+        <section class="footer-widget-holder">
+            <div class="footer-widget">
+                <a href="#">
+                    <img src="img/church_IMG.jpg" alt="Cool Company" width="200px" height="auto">
+                </a>
+                <h3>Address</h3>
+                <address>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </address>
+            </div>
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+                
+            <div class="footer-widget">
+                <h4>Sitemap</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+        <!--Footer Widgets-->
+
+        <!-- Site Footer-->
+        <footer class="site-footer">
+            <p><small>Copyright &copy; 2025</small></p>
+        </footer>
+        <!-- Site Footer-->
     </div>
     <!--Logo Holder-->
     <!--Search Holder-->
@@ -134,12 +147,12 @@
     <script>
         $(document).ready(function() {
             $('#adaptive').lightSlider({
-            adaptiveHeight:true,
-            item:1,
-            slideMargin:0,
-            loop:true
-    });
-});
+                adaptiveHeight:true,
+                item:1,
+                slideMargin:0,
+                loop:true,
+            });
+        });
     </script>
 </body>
 </html>
