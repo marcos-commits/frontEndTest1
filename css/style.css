@@ -84,3 +84,49 @@ body {
 .main-menu > ul > li:hover .drop {
     display: block;
 }
+
+.lSPager {
+    margin-top: -25px !important;
+}
+
+.content-holder {
+    display: flex;
+    justify-content: space-between;
+    background-color: cornflowerblue;
+    border-bottom: 1px solid gainsboro;
+}
+
+.content-holder .content {
+    padding: 25px;
+    background-color: white;
+    width: 80%;
+}
+
+.content-holder .content h1 ~ h2 {
+    font-size: 1em;
+    color: darkgray;
+}
+
+.sidebar {
+    padding: 25px;
+    width: 20%;
+}
+
+.sidebar .widget h3 {
+    color: white;
+}
+
+.sidebar .widget ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.sidebar .widget ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar .widget ul > li > a:hover {
+    color: black;
+}
